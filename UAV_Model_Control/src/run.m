@@ -6,7 +6,7 @@ clear all
 clc
 addpath('utils')
 
-time_sim = 25;
+time_sim = 0.2;
 time_step = 0.01;
 t = 0:time_step:time_sim;
 
@@ -16,7 +16,7 @@ fprintf('Initializing params...\n')
 quads  = stateInit();
 
 % calc
-F = [0.21, 0.10, 0.10, 0.10];
+F = [0.0751, 0.075, 0.075, 0.075];
 for i = 1:size(t,2)
     quads = quad_dynamic(params,quads,i,F,time_step);
     

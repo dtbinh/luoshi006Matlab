@@ -13,6 +13,8 @@ quads.pz(1) = 0;
 
 quads.R = zeros(3,3,1);
 quads.R(:,:,1) = eye(3);
+quads.omega = zeros(3,1);
+
 
 
 end
